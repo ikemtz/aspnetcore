@@ -12,5 +12,6 @@ internal sealed class OpenApiSchemaJsonOptions : IConfigureOptions<JsonOptions>
     {
         // Put our resolver in front of the reflection-based one. See ProblemDetailsJsonOptionsSetup for more info.
         options.SerializerOptions.TypeInfoResolverChain.Insert(0, OpenApiJsonSchemaContext.Default);
+        options.SerializerOptions.MaxDepth = 12800;
     }
 }
