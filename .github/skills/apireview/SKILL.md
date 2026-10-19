@@ -1,7 +1,8 @@
 ---
-mode: edit
+name: apireview
+description: ApiReview
+disable-model-invocation: true
 ---
-
 # Instructions for Filling in an API Review Issue
 
 ## Prerequisites
